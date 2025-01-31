@@ -1,0 +1,9 @@
+footer{
+    background: var(--color-marron);
+    margin: 0%;
+    padding: 5px;
+}
+
+.derecho{
+    font-size: 0.5em;
+}

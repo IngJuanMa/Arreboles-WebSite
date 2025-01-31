@@ -1,0 +1,30 @@
+.header {
+    font-family: var(--font-Monserrat);
+    margin: 0%;
+    padding: 10px;
+    background: var(--color-gris)
+}
+
+.nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.7em;
+    padding: 10px;
+    text-align: center;
+}
+
+.imagenlogo {
+    width: 10%;
+    margin-right: 20px;
+}

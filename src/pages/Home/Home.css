@@ -1,0 +1,94 @@
+main {
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, #111213),linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url(/public/cortinas.jpeg.jpg);
+    background-size:cover;
+    height: 60vh;
+    background-position: 90% 0%;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    margin: 0%;
+}
+
+p{
+    text-align: center;
+}
+
+.botonMenu{
+    background-color: var(--color-naranja);
+    color: white;
+    font-family: var(--font-Monserrat);
+    text-decoration: none;
+    padding: 1%;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;    
+}
+
+.logoblanco{
+    width: 20%;
+    border-radius: 50px;
+}
+
+
+.categorias {
+    padding: 20px;
+    text-align: center;
+  }
+
+.categorias h2 {
+  margin-bottom: 0%;
+}
+
+
+.categorias p {
+  font-family: var(--font-Monserrat);
+  font-size: 0.8em;
+  margin-top: 1px;
+}
+
+.categoria p{
+  font-family: var(--font-Playfair);
+  font-size: 1.3em;
+  margin-top: 2%;
+}
+  
+  .categoria-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .categoria img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  @media (min-width: 768px) {
+    .categoria-grid {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .redes a {
+    color: #fa951d;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .redes-sociales{
+    margin: 10px 0px;
+  }
+
