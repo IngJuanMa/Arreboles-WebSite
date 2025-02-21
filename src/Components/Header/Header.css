@@ -1,8 +1,17 @@
 .header {
     font-family: var(--font-Monserrat);
-    margin: 0%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0% 30px;    
     padding: 10px;
-    background: var(--color-gris)
+    background: var(--color-blanco);
+    height: 10vh;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav ul {
@@ -17,14 +26,40 @@
 
 .nav a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: 500;
     font-size: 0.7em;
     padding: 10px;
     text-align: center;
 }
+.nav-carrito{
+    border: none;
+    background-color: var(--color-naranja);
+    border-radius: 40px;
+    padding: 8px;  
+    transition: 0.5s ease;
+}
 
-.imagenlogo {
-    width: 10%;
-    margin-right: 20px;
+.nav-carrito:hover{
+    background-color: var(--color-marron);
+    color: white;
+    transform: scale(1.1);
+}
+.imagenlogo{
+    width: 80px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+@media (max-width:768px){
+    .nav ul {
+        display: none;
+    }
+    
+}
+
+@media (min-width:1024px){
+    .header{
+        padding: 10px 140px;
+        height: 12vh;
+    }
 }

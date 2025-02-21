@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Bowlby+One&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300;1,300&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&family=Raleway:ital,wght@0,100..900;1,100..900&family=Slabo+27px&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 :root {
   font-family: "Playfair Display", serif;
@@ -15,8 +15,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --font-Playfair:"Playfair Display", serif;
-  --font-Monserrat: "Montserrat", serif;
-  --color-gris:#202328;
+  --font-Monserrat: "Quicksand", serif;
+  --color-blanco:#f3ebe4;
   --color-naranja:#fa951d;
   --color-marron: #51351c;
 }
@@ -25,9 +25,10 @@ body {
   font-family: var(--font-Monserrat);
   margin: 0;
   padding: 0;
-  background-color: #202328;
+  background-color: #f3ebe4;
   color: white;
 }
 
 h1, h2, h3 {
-  font-family: var(--font-Playfair);}
+  font-family: var(--font-Playfair);
+}
