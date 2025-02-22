@@ -1,0 +1,137 @@
+.s-productos {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-marron);
+    text-align: center;
+    align-items: center;
+    font-family: var(--font-Monserrat);
+}
+.s-productos h1{
+    font-family: var(--font-Monserrat);
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+
+.guion{
+    background-color: var(--color-naranja);
+    width: 30%;
+    height: 4px;
+    margin-top: 1px;
+}
+
+.destacados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.fotoproducto {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 200px;
+    filter: drop-shadow(-2px 2px 6px var(--color-marron));
+    border: 1px solid var(--color-marron);
+    transition: transform 0.2s ease-in-out;
+}
+
+.carddestacado:hover .fotoproducto {
+    transform: rotate(35deg) scale(1.1);
+}
+
+.carddestacado p {
+    font-size: 0.8em;
+}
+
+.carddestacado {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1px;
+    padding: 8px;
+    align-items: center;
+    background: white;
+    box-shadow: 5px 5px 5px var(--color-marron);
+    width: 90%;
+    border-radius: 5px;
+    color: var(--color-marron);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    height: 95px;
+}
+
+.carddestacado:hover {
+    transform: scale(1.1);
+}
+
+
+.info-card h4 {
+    font-size: 0.7em;
+    margin: 2px 0;
+    font-weight: 900;
+}
+
+.info-card p {
+    font-size: 0.7em;
+    margin: 2px 0;
+    margin-bottom: 5px;
+    
+}
+
+.info-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-card button {
+    font-family: var(--font-Monserrat);
+    font-weight: 600;
+    display: flex;
+    gap: 3px;
+    border: none;
+    color: var(--color-marron);
+    background-color: var(--color-naranja);
+    padding: 8px 10px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in;
+    font-size: 0.6em;
+}
+
+.info-card button:hover{
+    background-color: var(--color-marron);
+    color: var(--color-blanco);
+    transform: scale(1.1);
+}
+
+.listaproductos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px ;
+}
+
+.itemproducto{
+    font-weight: 900;
+    background-color: var(--color-naranja);
+    padding: 8px 12px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px var(--color-marron);
+}
+
+@media (min-width:768px) {
+    .destacados {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:1024px) {
+    .destacados {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 70%;
+    }
+    .carddestacado{
+        height: 90px;
+    }
+}

@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import { MdDeliveryDining } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
-import { animate, motion } from "framer-motion";
+import {  motion } from "framer-motion";
 
 const Subir = (delay) => {
     return {
@@ -54,7 +54,7 @@ function Home() {
                         </motion.h3>
 
                         <motion.button
-                            variants={Subir(1)}
+                            variants={Subir(0.6)}
                             initial="initial"
                             whileInView="animate">
                             Comprar Ahora
