@@ -1,4 +1,5 @@
 import CardProduct from "../../Components/CardProduct";
+import CardNav from "../../Components/CardNavCategoria";
 import "./Productos.css"
 import { IoCartOutline } from "react-icons/io5";
 
@@ -36,27 +37,45 @@ const PDestacados = [
 const ListaProductos = [
   {
     id: 1,
-    nombre: "Hamburguesas"
+    nombre: "Hamburguesas",
+    color:"#FA951D",
+    imagen:"/products/H-pan.png"
   },
   {
     id: 2,
-    nombre: "Mazorcadas"
+    nombre: "H. en Patacón",
+    color:"#FFCC16",
+    imagen:"/products/Ham-Patacon.png"
   },
   {
     id: 3,
-    nombre: "Choripapas"
+    nombre: "Mazorcadas",
+    color:"#AC6C14",
+    imagen:"/products/picada.png"
   },
   {
     id: 4,
-    nombre: "Picadas"
+    nombre: "Choripapas",
+    color:"#F1E1BE",
+    imagen:"/products/picada.png"
   },
   {
     id: 5,
-    nombre: "Adicionales"
+    nombre: "Picadas",
+    color:"#F66222",
+    imagen:"/products/picada.png"
   },
   {
     id: 6,
-    nombre: "Bebidas"
+    nombre: "Adicionales",
+    color:"#8B3C19",
+    imagen:"/products/adicion.png"
+  },
+  {
+    id: 7,
+    nombre: "Bebidas",
+    color:"#FFCC16",
+    imagen:"/products/bebidas.png"
   },
 ]
 
@@ -127,16 +146,25 @@ function productos() {
         })}
       </div>
 
-      <h1>Menú</h1>
+      <h1 className="titulomen">Conoce nuestro Menú</h1>
+      <p className="titutlocategorías">Categorías</p>
       <nav className="listaproductos">
+        <div className="carruselproduc">
         {
           ListaProductos.map((item) => {
             return (
-              <a key={item.id} className="itemproducto">{item.nombre} </a>
+              <a key={item.id} >
+                <CardNav 
+                color={item.color} 
+                nombre={item.nombre}
+                imagen={item.imagen}/> 
+                </a>
             )
           })
         }
+        </div>
       </nav>
+
       <div className="CardsProductos">
         {ProductosUno.map((item) => {
           return (

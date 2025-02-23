@@ -16,6 +16,7 @@ const CardProduct = ({nombre, ingredientes,precio,imagen}) => {
             <img src={imagen} />
             <h4>{nombre}</h4>
             <p>{ingredientes}</p>
+            <h4>Cantidad</h4>
             <div className='contadorProducto' >
                 <button onClick={RestarContador} className='boton'>-</button>
                 <span>{Contador}</span>

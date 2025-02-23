@@ -11,12 +11,16 @@
 }
 
 .CardProducto img{
-    width: 70%;
-    
+    width: 100%;
+    filter: drop-shadow(2px 2px 4px var(--color-marron));
 }
 .CardProducto h4,
 .CardProducto p{
     margin: 3px;
+}
+
+.CardProducto p{
+    font-size: 0.7em;
 }
 
 .contadorProducto{
