@@ -120,6 +120,14 @@
     box-shadow: 1px 1px 1px var(--color-marron);
 }
 
+.CardsProductos{
+    width: 90%;
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
 @media (min-width:768px) {
     .destacados {
         grid-template-columns: 1fr 1fr 1fr 1fr;

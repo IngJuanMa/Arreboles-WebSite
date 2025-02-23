@@ -1,0 +1,52 @@
+.CardProducto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background: wheat;
+    margin: 3px;
+    max-width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.CardProducto img{
+    width: 70%;
+    
+}
+.CardProducto h4,
+.CardProducto p{
+    margin: 3px;
+}
+
+.contadorProducto{
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+    font-family: var(--font-Monserrat);
+    font-weight: 900;
+}
+
+.boton{
+    font-family: var(--font-Monserrat);
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background: var(--color-marron);
+    color: var(--color-blanco);
+    width: 30px;
+}
+
+.boton-comprar{
+    border: none;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: var(--color-naranja);
+    font-family: var(--font-Monserrat);
+    display: flex;
+    gap: 5px ;
+    border-radius: 3px;
+}

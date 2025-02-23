@@ -1,3 +1,4 @@
+import CardProduct from "../../Components/CardProduct";
 import "./Productos.css"
 import { IoCartOutline } from "react-icons/io5";
 
@@ -32,31 +33,69 @@ const PDestacados = [
   }
 ]
 
-const ListaProductos =[
+const ListaProductos = [
   {
-    id:1,
-    nombre:"Hamburguesas"
+    id: 1,
+    nombre: "Hamburguesas"
   },
   {
-    id:2,
-    nombre:"Mazorcadas"
+    id: 2,
+    nombre: "Mazorcadas"
   },
   {
-    id:3,
-    nombre:"Choripapas"
+    id: 3,
+    nombre: "Choripapas"
   },
   {
-    id:4,
-    nombre:"Picadas"
+    id: 4,
+    nombre: "Picadas"
   },
   {
-    id:5,
-    nombre:"Adicionales"
+    id: 5,
+    nombre: "Adicionales"
   },
   {
-    id:6,
-    nombre:"Bebidas"
+    id: 6,
+    nombre: "Bebidas"
   },
+]
+
+const ProductosUno = [
+  {
+    id: 1,
+    nombre: "Hamburguesa Clasica",
+    precio: "19.000",
+    ingredientes: "Pan brioche, carne artesanal 125g, chorizo, maiz tierno, cebolla caramelizada,verduras frescas",
+    imagen: "/hamburgesa.png"
+  },
+  {
+    id: 2,
+    nombre: "Hamburguesa Caribeña",
+    precio: "22.000",
+    ingredientes: "Pan brioche, carne artesanal 125g, chorizo, maiz tierno, cebolla caramelizada,verduras frescas",
+    imagen: "/patacon.jpeg"
+  },
+  {
+    id: 3,
+    nombre: "Choripapa Exótica",
+    precio: "17.000",
+    ingredientes: "Pan brioche, carne artesanal 125g, chorizo, maiz tierno, cebolla caramelizada,verduras frescas",
+    imagen: "/hamburgesa.png"
+  },
+  {
+    id: 4,
+    nombre: "H.Atómica (Patacón)",
+    precio: "21.000",
+    ingredientes: "Pan brioche, carne artesanal 125g, chorizo, maiz tierno, cebolla caramelizada,verduras frescas",
+    imagen: "/hamburgesa.png"
+  },
+  {
+    id: 5,
+    nombre: "H.Atómica (Patacón)",
+    precio: "21.000",
+    ingredientes: "Pan brioche, carne artesanal 125g, chorizo, maiz tierno, cebolla caramelizada,verduras frescas",
+    imagen: "/hamburgesa.png"
+  }
 ]
 
 function productos() {
@@ -89,15 +128,31 @@ function productos() {
       </div>
 
       <h1>Menú</h1>
-        <nav className="listaproductos">
-          {
-            ListaProductos.map((item)=>{
-              return(
-                <a key={item.id} className="itemproducto">{item.nombre} </a>
-              )
-            })
-          }
-        </nav>
+      <nav className="listaproductos">
+        {
+          ListaProductos.map((item) => {
+            return (
+              <a key={item.id} className="itemproducto">{item.nombre} </a>
+            )
+          })
+        }
+      </nav>
+      <div className="CardsProductos">
+        {ProductosUno.map((item) => {
+          return (
+            <>
+                <CardProduct
+                  key={item.id}
+                  nombre={item.nombre}
+                  precio={item.precio}
+                  ingredientes={item.ingredientes}
+                  imagen={item.imagen}
+                />
+            </>
+          );
+        })}
+
+      </div>
     </section >
   );
 }

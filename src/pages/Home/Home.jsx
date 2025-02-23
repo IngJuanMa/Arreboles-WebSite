@@ -33,7 +33,7 @@ function Home() {
                             initial="initial"
                             whileInView="animate"
                         >¡Hola!👋 <br />
-                            Bienvendos a los Arreboles Web
+                            Bienvenidos a los Arreboles Web
                         </motion.h1>
 
                         <motion.p
