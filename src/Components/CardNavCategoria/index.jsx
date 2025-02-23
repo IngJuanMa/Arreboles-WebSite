@@ -3,9 +3,9 @@ import "./CardNav.css"
 import { MdOutlineExpandMore } from "react-icons/md";
 
 
-const CardNav = ({nombre,color,imagen}) => {
+const CardNav = ({nombre,color,imagen, Activa}) => {
     return (
-        <article className='CardNav'>
+        <article className={`CardNav ${Activa ? "active" : ""}`}>
             <section className='s-foto' style={{ backgroundColor: color }}>
                 <img src={imagen} className='imagen' />
             </section>

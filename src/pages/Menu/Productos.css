@@ -8,9 +8,14 @@
 }
 
 .s-productos h1 {
+    display: flex;
+    flex-direction: column;
     font-family: var(--font-Monserrat);
     font-weight: 900;
     font-size: 1.7rem;
+    margin-bottom: 0;
+    width: 95%;
+    align-items: center;
 }
 
 .guion {
@@ -53,7 +58,7 @@
     padding: 8px;
     align-items: center;
     background: white;
-    box-shadow: 5px 5px 5px var(--color-marron);
+    /* box-shadow: 2px 2px 5px var(--color-marron); */
     width: 90%;
     border-radius: 5px;
     color: var(--color-marron);
@@ -68,7 +73,7 @@
 
 
 .info-card h4 {
-    font-size: 0.7em;
+    font-size: 0.8em;
     margin: 2px 0;
     font-weight: 900;
 }
@@ -140,6 +145,7 @@
 
 .titutlocategorías {
     margin-top: 0;
+    margin-bottom: 1px;
 }
 
 @media (min-width:768px) {

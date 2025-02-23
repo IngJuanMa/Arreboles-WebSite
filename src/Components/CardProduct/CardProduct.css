@@ -2,16 +2,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     background: wheat;
     margin: 3px;
-    max-width: 250px;
+    width: 143px;
     padding: 10px;
     border-radius: 5px;
 }
 
 .CardProducto img{
-    width: 100%;
+    width: 90%;
     filter: drop-shadow(2px 2px 4px var(--color-marron));
 }
 .CardProducto h4,

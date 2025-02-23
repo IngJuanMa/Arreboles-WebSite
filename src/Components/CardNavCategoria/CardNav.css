@@ -6,8 +6,12 @@
     width: 110px;
     background-color: whitesmoke;
     padding: 5px;
-    
+    height: 135px;
     border-radius: 5px;
+    
+}
+.CardNav.active{
+    outline: 2px solid var(--color-marron);
 }
 
 .imagen{

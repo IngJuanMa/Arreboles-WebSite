@@ -22,8 +22,7 @@ const CardProduct = ({nombre, ingredientes,precio,imagen}) => {
                 <span>{Contador}</span>
                 <button onClick={SumarContador} className='boton'>+</button>
             </div>
-            <h4>Precio Unidad: <br/>
-                ${precio}</h4>
+            <h4>${precio}</h4>
             <button className='boton-comprar'>
                 Comprar
                 <IoCartOutline />
