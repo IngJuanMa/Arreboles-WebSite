@@ -4,7 +4,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { useState } from 'react';
 
 
-const CardProduct = ({nombre, ingredientes,precio,imagen}) => {
+const CardProduct = ({ nombre, ingredientes, precio, imagen }) => {
 
     const [Contador, SetContador] = useState(0);
 
@@ -16,17 +16,19 @@ const CardProduct = ({nombre, ingredientes,precio,imagen}) => {
             <img src={imagen} />
             <h4>{nombre}</h4>
             <p>{ingredientes}</p>
-            <h4>Cantidad</h4>
-            <div className='contadorProducto' >
-                <button onClick={RestarContador} className='boton'>-</button>
-                <span>{Contador}</span>
-                <button onClick={SumarContador} className='boton'>+</button>
+            <div className='contadorycomprar'>
+                <div className='contadorProducto' >
+                    <button onClick={RestarContador} className='boton'>-</button>
+                    <span>{Contador}</span>
+                    <button onClick={SumarContador} className='boton'>+</button>
+                </div>
+                <button className='boton-comprar'>
+                    <IoCartOutline size={25}/>
+                </button>
             </div>
+
             <h4>${precio}</h4>
-            <button className='boton-comprar'>
-                Comprar
-                <IoCartOutline />
-            </button>
+
         </article>
     )
 }
