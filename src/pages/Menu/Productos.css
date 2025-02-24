@@ -124,8 +124,8 @@
 
 .carruselproduc {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     gap: 10px;
 }
 
@@ -160,6 +160,7 @@
     .destacados {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    
 }
 
 @media (min-width:1024px) {
@@ -170,5 +171,9 @@
 
     .carddestacado {
         height: 90px;
+    }
+    .carruselproduc {
+        align-items: center;
+        justify-content: center;
     }
 }

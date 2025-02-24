@@ -78,7 +78,7 @@ const ListaProductos = [
     nombre: "Bebidas",
     color: "#FFCC16",
     imagen: "/products/bebidas.png"
-  },
+  }
 ]
 
 // Array con info detallada de los productos
@@ -222,7 +222,7 @@ const ProductosUno = [
 
 ]
 
-const Categorias = ["Todas", "Hamburguesas", "H-Patacon", "Mazorcadas", "Choripapas", "Picadas", "Adicionales", "Bebidas"]
+const Categorias = ["Hamburguesas", "H-Patacon", "Mazorcadas", "Choripapas", "Picadas", "Adicionales", "Bebidas"]
 
 function productos() {
 
@@ -293,13 +293,14 @@ function productos() {
         {ProductosFiltrados.map((item) => {
           return (
             <motion.div
-            key={item.id}
+            className="div"
+              key={item.id}
               initial={{ opacity: 0, y: -50 }}  // Estado inicial (opacidad 0 y posición desplazada hacia abajo)
               whileInView={{ opacity: 1, y: 0 }}  // Animación cuando se monta
               transition={{ duration: 0.5, ease: "easeOut" }}  // Duración y tipo de animación
             >
               <CardProduct
-                
+
                 nombre={item.nombre}
                 precio={item.precio}
                 ingredientes={item.ingredientes}
