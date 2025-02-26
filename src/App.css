@@ -22,6 +22,8 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: var(--font-Monserrat);
   margin: 0;
   padding: 0;

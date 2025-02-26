@@ -12,25 +12,25 @@ const PDestacados = [
     id: 1,
     nombre: "Hamburguesa Atómica",
     precio: "19.000",
-    imagen: "/hamburgesa.png"
+    imagen: "/products/H-Atómica.png"
   },
   {
     id: 2,
     nombre: "Mazorcada Tentadora",
     precio: "22.000",
-    imagen: "/hamburgesa.png"
+    imagen: "/products/choripapa.png"
   },
   {
     id: 3,
     nombre: "Choripapa Exótica",
     precio: "17.000",
-    imagen: "/hamburgesa.png"
+    imagen: "/products/choripapa.png"
   },
   {
     id: 4,
     nombre: "H.Atómica (Patacón)",
     precio: "21.000",
-    imagen: "/hamburgesa.png"
+    imagen: "/products/Ham-Patacon.png"
   }
 ]
 
@@ -59,7 +59,7 @@ const ListaProductos = [
     id: 4,
     nombre: "Choripapas",
     color: "#F1E1BE",
-    imagen: "/products/picada.png"
+    imagen: "/products/choripapa.png"
   },
   {
     id: 5,
@@ -78,6 +78,12 @@ const ListaProductos = [
     nombre: "Bebidas",
     color: "#FFCC16",
     imagen: "/products/bebidas.png"
+  },
+  {
+    id: 8,
+    nombre: "Bebidas Calientes",
+    color: "#FA951D",
+    imagen: "/products/bebidas.png"
   }
 ]
 
@@ -89,7 +95,7 @@ const ProductosUno = [
     nombre: "La Clasica",
     precio: "13.000",
     ingredientes: "Pan brioche, carne artesanal 120g, tomate, verduras frescas, cebolla caramelizada y maíz tierno",
-    imagen: "/hamburgesa.png",
+    imagen: "/products/H-Clasica.png",
     categoria: "Hamburguesas"
   },
   {
@@ -97,7 +103,7 @@ const ProductosUno = [
     nombre: "La Caribeña",
     precio: "16.000",
     ingredientes: "Pan brioche, carne artesanal 120g, piña asada, ripio, maiz tierno, cebolla caramelizada,lechuga,tomate",
-    imagen: "/hamburgesa.png",
+    imagen: "/products/H-Caribeña.png",
     categoria: "Hamburguesas"
   },
   {
@@ -105,7 +111,7 @@ const ProductosUno = [
     nombre: "La Suprema",
     precio: "18.000",
     ingredientes: "Pan brioche, carne artesanal 120g, Pollo apanado, queso doble, verduras frescas, cebolla caramelizada, ripio",
-    imagen: "/hamburgesa.png",
+    imagen: "/products/H-Suprema.png",
     categoria: "Hamburguesas"
   },
   {
@@ -113,7 +119,7 @@ const ProductosUno = [
     nombre: "La Doble",
     precio: "18.000",
     ingredientes: "Pan brioche, carne artesanal 120g doble, cebolla caramelizada, verduras frescas, ripio, quesodoble",
-    imagen: "/hamburgesa.png",
+    imagen: "/hambur.png",
     categoria: "Hamburguesas"
   },
   {
@@ -121,7 +127,7 @@ const ProductosUno = [
     nombre: "La Atómica",
     precio: "19.000",
     ingredientes: "Pan brioche, carne artesanal 120g, chorizo, tocineta, maiz tierno, cebolla caramelizada,verduras frescas",
-    imagen: "/hamburgesa.png",
+    imagen: "/products/H-Atómica.png",
     categoria: "Hamburguesas"
   },
 
@@ -131,7 +137,7 @@ const ProductosUno = [
     nombre: "La Clasica (PT)",
     precio: "15.000",
     ingredientes: "Pan brioche, carne artesanal 120g, tomate, verduras frescas, cebolla caramelizada y maíz tierno",
-    imagen: "/products/Ham-Patacon.png",
+    imagen: "/products/H-Clásica-PT.png",
     categoria: "H-Patacon"
   },
   {
@@ -139,7 +145,7 @@ const ProductosUno = [
     nombre: "La Caribeña (PT)",
     precio: "18.000",
     ingredientes: "Pan brioche, carne artesanal 120g, piña asada, ripio, maiz tierno, cebolla caramelizada, lechuga, tomate",
-    imagen: "/products/Ham-Patacon.png",
+    imagen: "/products/H-Caribeña-PT.png",
     categoria: "H-Patacon"
   },
   {
@@ -147,7 +153,7 @@ const ProductosUno = [
     nombre: "La Suprema (PT)",
     precio: "20.000",
     ingredientes: "Pan brioche, carne artesanal 120g, Pollo apanado, queso doble, verduras frescas, cebolla caramelizada, ripio",
-    imagen: "/products/Ham-Patacon.png",
+    imagen: "/products/H-Suprema-PT.png",
     categoria: "H-Patacon"
   },
   {
@@ -187,19 +193,19 @@ const ProductosUno = [
 
   // Choripapas
   {
-    id: 13,
+    id: 14,
     nombre: "Sencilla",
     precio: "14.000",
     ingredientes: "Chorizo en trozos, papa natural estilo francesa y salsas (Opcional)",
-    imagen: "/hamburgesa.png",
+    imagen: "/products/choripapa.png",
     categoria: "Choripapas"
   },
   {
-    id: 14,
+    id: 13,
     nombre: "Exótica",
     precio: "17.000",
     ingredientes: "Papa natural estilo francesa, chorizo en trozos, tocineta, cebolla caramelizada,ripio,queso gratinado",
-    imagen: "/hamburgesa.png",
+    imagen: "/products/choripapa.png",
     categoria: "Choripapas"
   },
   // Picadas
@@ -218,6 +224,40 @@ const ProductosUno = [
     ingredientes: "Doble porcion de pollo asado, doble porción de carne, 2 chorizos, 4 nuggets de pollo, 400g de papa, plátanos y salsas",
     imagen: "/products/picada.png",
     categoria: "Picadas"
+  },
+
+  //Adicionales
+  {
+    id: 17,
+    nombre: "Papas Fritas",
+    precio: "5.000",
+    ingredientes: "Porción de 250g, estilo francesa",
+    imagen: "/products/papas.png",
+    categoria: "Adicionales"
+  },
+  {
+    id: 18,
+    nombre: "Porción de carne ",
+    precio: "5.000",
+    ingredientes: "Porción 120g de carne para hamburguesa artesanal",
+    imagen: "/products/carne.png",
+    categoria: "Adicionales"
+  },
+  {
+    id: 19,
+    nombre: "Porción pollo apanado",
+    precio: "5.000",
+    ingredientes: "Porción de pollo apanado 130g",
+    imagen: "/products/pollo.png",
+    categoria: "Adicionales"
+  },
+  {
+    id: 20,
+    nombre: "Chorizo",
+    precio: "5.000",
+    ingredientes: "Unidad chorizo las brisas",
+    imagen: "/products/chorizo.png",
+    categoria: "Adicionales"
   }
 
 ]
@@ -293,6 +333,7 @@ function productos() {
         {ProductosFiltrados.map((item) => {
           return (
             <motion.div
+            
             className="div"
               key={item.id}
               initial={{ opacity: 0, y: -50 }}  // Estado inicial (opacidad 0 y posición desplazada hacia abajo)

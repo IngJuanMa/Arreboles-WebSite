@@ -1,0 +1,20 @@
+.barranav{
+    display: flex;
+    gap: 25%;
+    align-items: center;
+    width: 90%;
+    background-color: var(--color-naranja);
+    justify-content: center;
+    border-radius: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 5%;
+    z-index: 1000;
+    position:fixed;
+    top: 5px;
+    margin-bottom: 10px;
+    color: var(--color-marron);
+}
+.barranav a:hover{
+    color: var(--color-naranja);
+}

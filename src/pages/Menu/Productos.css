@@ -137,8 +137,8 @@
 .CardsProductos {
     width: 95%;
     margin: 30px 0;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
     flex-wrap: wrap;
     gap: 4px;
 }
@@ -166,7 +166,7 @@
 @media (min-width:1024px) {
     .destacados {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        width: 70%;
+        width: 60%;
     }
 
     .carddestacado {
@@ -176,4 +176,10 @@
         align-items: center;
         justify-content: center;
     }
+
+    .CardsProductos {
+        grid-template-rows: 1fr;
+        width: 60%;
+    }
+    
 }

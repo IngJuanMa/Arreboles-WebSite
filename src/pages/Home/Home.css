@@ -1,6 +1,7 @@
 main {
   background-color: var(--color-blanco);
   font-family: var(--font-Monserrat);
+  margin-top: 20px;
 }
 
 .contenedor {
@@ -12,6 +13,7 @@ main {
   grid-template-columns: 1fr 1fr;
   position: relative;
   overflow: hidden;
+  height: 100vh;
 }
 
 .c-imagenes {
