@@ -4,6 +4,9 @@ import { GoHomeFill } from "react-icons/go";
 import { FaBagShopping } from "react-icons/fa6";
 import { FaCircleUser } from "react-icons/fa6";
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
+import { FaCartShopping } from "react-icons/fa6";
+
 
 const bajar = (delay) => {
     return {
@@ -23,33 +26,65 @@ const bajar = (delay) => {
     };
 };
 
-const Nav = () => {
+const Nav = ({ VariarCarrito }) => {
     return (
         <motion.nav
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className='barranav'>
-            <motion.a
-                variants={bajar(0.3)}
-                initial="initial"
-                whileInView="animate">
-                <GoHomeFill size={30} />
-            </motion.a>
+            className='barranav'
+        >
 
-            <motion.a
-                variants={bajar(0.5)}
-                initial="initial"
-                whileInView="animate">
-                <FaBagShopping size={30} />
-            </motion.a>
+            <section className='barranavbotones'>
+                <motion.div
+                    variants={bajar(0.3)}
+                    initial="initial"
+                    whileInView="animate"
+                    style={{ cursor: "pointer" }}>
+                    <Link
+                        className='link'
+                        to='inicio' smooth={true} duration={500} offset={-40} activeClass='activo'>
+                        <GoHomeFill size={20} />
+                    </Link>
+                </motion.div>
 
-            <motion.a
-                variants={bajar(0.7)}
-                initial="initial"
-                whileInView="animate">
-                <FaCircleUser size={30} />
-            </motion.a>
+                <motion.div
+                    variants={bajar(0.5)}
+                    initial="initial"
+                    whileInView="animate"
+                    style={{ cursor: "pointer" }}>
+                    <Link
+                        to='menu' smooth={true} duration={500} offset={-40}>
+                        <FaBagShopping size={20} />
+                    </Link>
+                </motion.div>
+
+                <motion.div
+                    variants={bajar(0.7)}
+                    initial="initial"
+                    whileInView="animate"
+                    style={{ cursor: "pointer" }}>
+                    <Link
+                        to='nosotros' smooth={true} duration={500} offset={-40}>
+                        <FaCircleUser size={20} />
+                    </Link>
+                </motion.div>
+
+            </section>
+            <section className='logocarrito'>
+                <motion.a
+                    variants={bajar(0.7)}
+                    initial="initial"
+                    whileInView="animate"
+                    onClick={VariarCarrito}
+                    style={{ cursor: "pointer" }}
+                >
+                    <FaCartShopping size={30} />
+                </motion.a>
+            </section>
+
+
+
         </motion.nav>
     )
 }

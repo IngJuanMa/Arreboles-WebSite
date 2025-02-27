@@ -25,7 +25,7 @@ const Subir = (delay) => {
 function Home() {
     return (
         <>
-            <main >
+            <main id="inicio" >
                 <section className="contenedor" >
                     <div className="c-textos">
                         <motion.h1

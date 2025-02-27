@@ -1,20 +1,49 @@
 .barranav{
     display: flex;
-    gap: 25%;
+    gap: 10%;
     align-items: center;
     width: 90%;
-    background-color: var(--color-naranja);
     justify-content: center;
-    border-radius: 30px;
-    padding: 10px;
     box-sizing: border-box;
     margin-left: 5%;
-    z-index: 1000;
+    z-index: 10000;
     position:fixed;
-    top: 5px;
+    top: 15px;
     margin-bottom: 10px;
+    
+}
+.barranavbotones{
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    width: 70%;
+    background-color: var(--color-naranja);
     color: var(--color-marron);
+    padding: 10px;
+    border-radius: 30px;
+}
+.barranav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .barranav a:hover{
+    color: var(--color-blanco);
+}
+.logocarrito{
     color: var(--color-naranja);
+    background-color: var(--color-marron);
+    padding: 10px;  
+    border-radius: 30px;
+}
+
+.link.activo{
+    color: var(--color-blanco);
+}
+
+@media (min-width:1024px) {
+    .barranav{
+        width: 60%;
+        margin-left: 20%;
+    }
 }

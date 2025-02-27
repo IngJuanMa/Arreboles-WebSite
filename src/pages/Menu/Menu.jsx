@@ -93,7 +93,7 @@ const ProductosUno = [
   {
     id: 1,
     nombre: "La Clasica",
-    precio: "13.000",
+    precio: "13000",
     ingredientes: "Pan brioche, carne artesanal 120g, tomate, verduras frescas, cebolla caramelizada y maíz tierno",
     imagen: "/products/H-Clasica.png",
     categoria: "Hamburguesas"
@@ -101,7 +101,7 @@ const ProductosUno = [
   {
     id: 2,
     nombre: "La Caribeña",
-    precio: "16.000",
+    precio: "16000",
     ingredientes: "Pan brioche, carne artesanal 120g, piña asada, ripio, maiz tierno, cebolla caramelizada,lechuga,tomate",
     imagen: "/products/H-Caribeña.png",
     categoria: "Hamburguesas"
@@ -109,7 +109,7 @@ const ProductosUno = [
   {
     id: 3,
     nombre: "La Suprema",
-    precio: "18.000",
+    precio: "18000",
     ingredientes: "Pan brioche, carne artesanal 120g, Pollo apanado, queso doble, verduras frescas, cebolla caramelizada, ripio",
     imagen: "/products/H-Suprema.png",
     categoria: "Hamburguesas"
@@ -117,7 +117,7 @@ const ProductosUno = [
   {
     id: 4,
     nombre: "La Doble",
-    precio: "18.000",
+    precio: "18000",
     ingredientes: "Pan brioche, carne artesanal 120g doble, cebolla caramelizada, verduras frescas, ripio, quesodoble",
     imagen: "/hambur.png",
     categoria: "Hamburguesas"
@@ -125,7 +125,7 @@ const ProductosUno = [
   {
     id: 5,
     nombre: "La Atómica",
-    precio: "19.000",
+    precio: "19000",
     ingredientes: "Pan brioche, carne artesanal 120g, chorizo, tocineta, maiz tierno, cebolla caramelizada,verduras frescas",
     imagen: "/products/H-Atómica.png",
     categoria: "Hamburguesas"
@@ -135,7 +135,7 @@ const ProductosUno = [
   {
     id: 6,
     nombre: "La Clasica (PT)",
-    precio: "15.000",
+    precio: "15000",
     ingredientes: "Pan brioche, carne artesanal 120g, tomate, verduras frescas, cebolla caramelizada y maíz tierno",
     imagen: "/products/H-Clásica-PT.png",
     categoria: "H-Patacon"
@@ -143,7 +143,7 @@ const ProductosUno = [
   {
     id: 7,
     nombre: "La Caribeña (PT)",
-    precio: "18.000",
+    precio: "18000",
     ingredientes: "Pan brioche, carne artesanal 120g, piña asada, ripio, maiz tierno, cebolla caramelizada, lechuga, tomate",
     imagen: "/products/H-Caribeña-PT.png",
     categoria: "H-Patacon"
@@ -151,7 +151,7 @@ const ProductosUno = [
   {
     id: 8,
     nombre: "La Suprema (PT)",
-    precio: "20.000",
+    precio: "20000",
     ingredientes: "Pan brioche, carne artesanal 120g, Pollo apanado, queso doble, verduras frescas, cebolla caramelizada, ripio",
     imagen: "/products/H-Suprema-PT.png",
     categoria: "H-Patacon"
@@ -159,7 +159,7 @@ const ProductosUno = [
   {
     id: 9,
     nombre: "La Doble (PT)",
-    precio: "20.000",
+    precio: "20000",
     ingredientes: "Pan brioche, carne artesanal 120g doble, cebolla caramelizada, verduras frescas, ripio, quesodoble",
     imagen: "/products/Ham-Patacon.png",
     categoria: "H-Patacon"
@@ -167,7 +167,7 @@ const ProductosUno = [
   {
     id: 10,
     nombre: "La Atómica (PT)",
-    precio: "21.000",
+    precio: "21000",
     ingredientes: "Pan brioche, carne artesanal 120g, chorizo, tocineta, maiz tierno, cebolla caramelizada,verduras frescas",
     imagen: "/products/Ham-Patacon.png",
     categoria: "H-Patacon"
@@ -177,7 +177,7 @@ const ProductosUno = [
   {
     id: 11,
     nombre: "Estelar",
-    precio: "18.000",
+    precio: "18000",
     ingredientes: "Pollo en trozos, carne en trozos, lechuga, ripio, salsas, tocineta, queso gratinado, maíz tierno, cebolla caramelizada",
     imagen: "/hamburgesa.png",
     categoria: "Mazorcadas"
@@ -185,7 +185,7 @@ const ProductosUno = [
   {
     id: 12,
     nombre: "Tentadora",
-    precio: "22.000",
+    precio: "22000",
     ingredientes: "Pollo en trozos, carne en trozos, Chorizo en trozos, lechuga, ripio, salsas, tocineta, queso gratinado, maíz tierno, cebolla caramelizada",
     imagen: "/hamburgesa.png",
     categoria: "Mazorcadas"
@@ -195,7 +195,7 @@ const ProductosUno = [
   {
     id: 14,
     nombre: "Sencilla",
-    precio: "14.000",
+    precio: "14000",
     ingredientes: "Chorizo en trozos, papa natural estilo francesa y salsas (Opcional)",
     imagen: "/products/choripapa.png",
     categoria: "Choripapas"
@@ -203,7 +203,7 @@ const ProductosUno = [
   {
     id: 13,
     nombre: "Exótica",
-    precio: "17.000",
+    precio: "17000",
     ingredientes: "Papa natural estilo francesa, chorizo en trozos, tocineta, cebolla caramelizada,ripio,queso gratinado",
     imagen: "/products/choripapa.png",
     categoria: "Choripapas"
@@ -212,7 +212,7 @@ const ProductosUno = [
   {
     id: 15,
     nombre: "Picada Individual",
-    precio: "22.000",
+    precio: "22000",
     ingredientes: "Porcion de pollo asado, porción de carne, porción de chorizo, 2 nuggets de pollo, 180g de papa, plátanos y salsas",
     imagen: "/products/picada.png",
     categoria: "Picadas"
@@ -220,7 +220,7 @@ const ProductosUno = [
   {
     id: 16,
     nombre: "Pica2",
-    precio: "42.000",
+    precio: "42000",
     ingredientes: "Doble porcion de pollo asado, doble porción de carne, 2 chorizos, 4 nuggets de pollo, 400g de papa, plátanos y salsas",
     imagen: "/products/picada.png",
     categoria: "Picadas"
@@ -230,7 +230,7 @@ const ProductosUno = [
   {
     id: 17,
     nombre: "Papas Fritas",
-    precio: "5.000",
+    precio: "5000",
     ingredientes: "Porción de 250g, estilo francesa",
     imagen: "/products/papas.png",
     categoria: "Adicionales"
@@ -238,7 +238,7 @@ const ProductosUno = [
   {
     id: 18,
     nombre: "Porción de carne ",
-    precio: "5.000",
+    precio: "5000",
     ingredientes: "Porción 120g de carne para hamburguesa artesanal",
     imagen: "/products/carne.png",
     categoria: "Adicionales"
@@ -246,7 +246,7 @@ const ProductosUno = [
   {
     id: 19,
     nombre: "Porción pollo apanado",
-    precio: "5.000",
+    precio: "5000",
     ingredientes: "Porción de pollo apanado 130g",
     imagen: "/products/pollo.png",
     categoria: "Adicionales"
@@ -254,7 +254,7 @@ const ProductosUno = [
   {
     id: 20,
     nombre: "Chorizo",
-    precio: "5.000",
+    precio: "5000",
     ingredientes: "Unidad chorizo las brisas",
     imagen: "/products/chorizo.png",
     categoria: "Adicionales"
@@ -273,7 +273,7 @@ function productos() {
     ProductosUno.filter((prod) => prod.categoria === categoriaSeleccionada);
 
   return (
-    <section className="s-productos">
+    <section className="s-productos" id="menu">
       <h1>
         Nuestros productos destacados
         <div className="guion" />
@@ -341,7 +341,7 @@ function productos() {
               transition={{ duration: 0.5, ease: "easeOut" }}  // Duración y tipo de animación
             >
               <CardProduct
-
+                id={item.id}
                 nombre={item.nombre}
                 precio={item.precio}
                 ingredientes={item.ingredientes}
