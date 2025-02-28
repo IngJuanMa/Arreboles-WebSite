@@ -23,7 +23,7 @@ const CardProduct = ({ id, nombre, ingredientes, precio, imagen }) => {
             agregarAlCarrito({ id, nombre, precio: PrecionUnitario, cantidad: Contador, imagen });
             SetContador(1);
             // Mostrar mensaje de agregado
-            setMensajeAgregado(`${nombre} agregado al carrito 🛒`);
+            setMensajeAgregado(`${nombre} agregado al carrito ✅`);
 
             // Ocultar mensaje después de 2 segundos
             setTimeout(() => setMensajeAgregado(""), 2000);

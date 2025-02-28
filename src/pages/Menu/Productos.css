@@ -157,6 +157,23 @@
     margin-bottom: 1px;
 }
 
+.mensaje {
+    position: fixed;
+    bottom: 10px;
+    left: 0%;
+    transform: translate(50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Asegura que esté encima de todo */
+    font-weight: bold;
+}
+
+
 @media (min-width:768px) {
     .destacados {
         grid-template-columns: 1fr 1fr 1fr 1fr;

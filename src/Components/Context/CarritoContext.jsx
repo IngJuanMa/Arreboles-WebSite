@@ -10,7 +10,7 @@ export const useCarrito = () => useContext(CarritoContext);
 export const CarritoProvider = ({ children }) => {
     const [carrito, setCarrito] = useState([]);
 
-    // Función para agregar un producto al carrito
+    // Función para agregar un producto al carrito con cantidad
     const agregarAlCarrito = (producto) => {
         setCarrito((prevCarrito) => {
             const existe = prevCarrito.find((item) => item.id === producto.id);
@@ -20,6 +20,20 @@ export const CarritoProvider = ({ children }) => {
                 );
             }
             return [...prevCarrito, { ...producto, cantidad: producto.cantidad }];
+        });
+    };
+
+    //Función para agregar producto con unidad
+
+    const agregarUNidadAlCarrito = (producto) => {
+        setCarrito((prevCarrito) => {
+            const productoExistente = prevCarrito.find((item) => item.id === producto.id);
+            if (productoExistente) {
+                return prevCarrito.map((item) =>
+                    item.id === producto.id ? { ...item, cantidad: item.cantidad + 1 } : item
+                );
+            }
+            return [...prevCarrito, { ...producto, cantidad: 1 }];
         });
     };
 
@@ -34,7 +48,7 @@ export const CarritoProvider = ({ children }) => {
     };
 
     return (
-        <CarritoContext.Provider value={{ carrito, agregarAlCarrito, eliminarDelCarrito, vaciarCarrito }}>
+        <CarritoContext.Provider value={{ carrito, agregarAlCarrito, eliminarDelCarrito, vaciarCarrito,agregarUNidadAlCarrito }}>
             {children}
         </CarritoContext.Provider>
     );

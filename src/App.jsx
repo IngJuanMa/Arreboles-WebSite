@@ -45,9 +45,10 @@ function App() {
           className="carrito-container"
         >
           <Carrito VariarCarrito={VariarCarrito} />
-        </motion.div>}
+        </motion.div>}  
       </AnimatePresence>
       <Nosotros />
+      <Footer/>
     </>
   );
 }

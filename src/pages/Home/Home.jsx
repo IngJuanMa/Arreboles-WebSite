@@ -2,7 +2,8 @@ import React from "react";
 import "./Home.css";
 import { MdDeliveryDining } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
-import {  motion } from "framer-motion";
+import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Subir = (delay) => {
     return {
@@ -57,8 +58,13 @@ function Home() {
                             variants={Subir(0.6)}
                             initial="initial"
                             whileInView="animate">
-                            Comprar Ahora
-                            <IoCartOutline />
+                            <Link
+                                className='link'
+                                to='menu' smooth={true} duration={500} offset={-40} >
+                                Comprar Ahora
+                                <IoCartOutline style={{ marginLeft: "5px" }} />
+                            </Link>
+
                         </motion.button>
 
                     </div>

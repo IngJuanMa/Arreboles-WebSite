@@ -4,6 +4,7 @@ import "./Productos.css"
 import { IoCartOutline } from "react-icons/io5";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useCarrito } from "../../Components/Context/CarritoContext";
 
 
 // Array con info de productos destacados
@@ -11,25 +12,25 @@ const PDestacados = [
   {
     id: 1,
     nombre: "Hamburguesa Atómica",
-    precio: "19.000",
+    precio: "19000",
     imagen: "/products/H-Atómica.png"
   },
   {
     id: 2,
     nombre: "Mazorcada Tentadora",
-    precio: "22.000",
+    precio: "22000",
     imagen: "/products/choripapa.png"
   },
   {
     id: 3,
     nombre: "Choripapa Exótica",
-    precio: "17.000",
+    precio: "17000",
     imagen: "/products/choripapa.png"
   },
   {
     id: 4,
     nombre: "H.Atómica (Patacón)",
-    precio: "21.000",
+    precio: "21000",
     imagen: "/products/Ham-Patacon.png"
   }
 ]
@@ -134,7 +135,7 @@ const ProductosUno = [
   // Hamburguesas en patacón
   {
     id: 6,
-    nombre: "La Clasica (PT)",
+    nombre: "La Clasica (Patacón)",
     precio: "15000",
     ingredientes: "Pan brioche, carne artesanal 120g, tomate, verduras frescas, cebolla caramelizada y maíz tierno",
     imagen: "/products/H-Clásica-PT.png",
@@ -142,7 +143,7 @@ const ProductosUno = [
   },
   {
     id: 7,
-    nombre: "La Caribeña (PT)",
+    nombre: "La Caribeña (Patacón)",
     precio: "18000",
     ingredientes: "Pan brioche, carne artesanal 120g, piña asada, ripio, maiz tierno, cebolla caramelizada, lechuga, tomate",
     imagen: "/products/H-Caribeña-PT.png",
@@ -150,7 +151,7 @@ const ProductosUno = [
   },
   {
     id: 8,
-    nombre: "La Suprema (PT)",
+    nombre: "La Suprema (Patacón)",
     precio: "20000",
     ingredientes: "Pan brioche, carne artesanal 120g, Pollo apanado, queso doble, verduras frescas, cebolla caramelizada, ripio",
     imagen: "/products/H-Suprema-PT.png",
@@ -158,7 +159,7 @@ const ProductosUno = [
   },
   {
     id: 9,
-    nombre: "La Doble (PT)",
+    nombre: "La Doble (Patacón)",
     precio: "20000",
     ingredientes: "Pan brioche, carne artesanal 120g doble, cebolla caramelizada, verduras frescas, ripio, quesodoble",
     imagen: "/products/Ham-Patacon.png",
@@ -166,7 +167,7 @@ const ProductosUno = [
   },
   {
     id: 10,
-    nombre: "La Atómica (PT)",
+    nombre: "La Atómica (Patacón)",
     precio: "21000",
     ingredientes: "Pan brioche, carne artesanal 120g, chorizo, tocineta, maiz tierno, cebolla caramelizada,verduras frescas",
     imagen: "/products/Ham-Patacon.png",
@@ -264,37 +265,73 @@ const ProductosUno = [
 
 const Categorias = ["Hamburguesas", "H-Patacon", "Mazorcadas", "Choripapas", "Picadas", "Adicionales", "Bebidas"]
 
+
+
 function productos() {
 
+  const { agregarUNidadAlCarrito } = useCarrito();
+  const [mensaje, setMensaje] = useState(""); // Estado para el mensaje
   const [categoriaSeleccionada, SetCategoriaSeleccionada] = useState("Hamburguesas");
 
   const ProductosFiltrados = categoriaSeleccionada === "Todas"
     ? ProductosUno :
     ProductosUno.filter((prod) => prod.categoria === categoriaSeleccionada);
 
+  const handleAgregar = (item) => {
+    agregarUNidadAlCarrito(item);
+    setMensaje(`${item.nombre} se agregó al carrito ✅`); // Mostrar mensaje
+    setTimeout(() => setMensaje(""), 2000); // Ocultar mensaje después de 2 segundos
+  };
+
   return (
     <section className="s-productos" id="menu">
-      <h1>
+      <motion.h1
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 0.5 }}>
         Nuestros productos destacados
         <div className="guion" />
-      </h1>
-      <p>Haz tu compra directamente vía WhatsApp </p>
+      </motion.h1>
+
+      <motion.p
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 0.5 }}>
+        Haz tu compra directamente vía WhatsApp
+      </motion.p>
 
       <div className="destacados">
         {PDestacados.map((item) => {
           return (
             <>
-              <article className="carddestacado" key={item.id}>
+              <motion.article
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                transition={{ duration: 0.5 }}
+                className="carddestacado"
+                 key={item.id}>
                 <img src={item.imagen} className='fotoproducto' />
                 <div className="info-card">
                   <h4>{item.nombre}</h4>
                   <p>${item.precio}</p>
-                  <button>
+                  <button onClick={() => handleAgregar(item)}>
                     Comprar
                     <IoCartOutline />
                   </button>
                 </div>
-              </article>
+                {/* Mensaje emergente */}
+                {mensaje && (
+                  <motion.div
+                    className="mensaje-agregado"
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    {mensaje}
+                  </motion.div>
+                )}
+              </motion.article>
             </>
           )
         })}
@@ -307,11 +344,13 @@ function productos() {
         a partir del array:"ListaProductos" */}
 
       <nav className="listaproductos">
-        <div className="carruselproduc">
+        <div
+          className="carruselproduc">
           {
             ListaProductos.map((item) => {
               return (
-                <a key={item.id}
+                <a
+                  key={item.id}
                   onClick={() => SetCategoriaSeleccionada(item.nombre)}
                   className={`itemproducto ${categoriaSeleccionada === item.nombre ? "active" : ""}`}>
                   <CardNav
@@ -333,8 +372,7 @@ function productos() {
         {ProductosFiltrados.map((item) => {
           return (
             <motion.div
-            
-            className="div"
+              className="div"
               key={item.id}
               initial={{ opacity: 0, y: -50 }}  // Estado inicial (opacidad 0 y posición desplazada hacia abajo)
               whileInView={{ opacity: 1, y: 0 }}  // Animación cuando se monta
