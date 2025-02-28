@@ -59,9 +59,9 @@ function Home() {
                             initial="initial"
                             whileInView="animate">
                             <Link
-                                className='link'
+                                style={{display:"flex", justifyContent:"center", alignItems:"center"}}
                                 to='menu' smooth={true} duration={500} offset={-40} >
-                                Comprar Ahora
+                                Compra Ahora
                                 <IoCartOutline style={{ marginLeft: "5px" }} />
                             </Link>
 
