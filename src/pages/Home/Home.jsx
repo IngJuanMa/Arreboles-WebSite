@@ -90,7 +90,7 @@ function Home() {
                             initial={{ opacity: 0, rotate: 20, x: -200, y: 100 }}
                             whileInView={{ opacity: 1, rotate: 0, x: 0, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.5 }}
-                            src="/hambur.png"
+                            src="/products/H-Caribeña.png"
                             alt="imagen_hamburguesa"
                             className="hambur" />
                     </div>

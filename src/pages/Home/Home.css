@@ -1,7 +1,7 @@
 main {
   background-color: var(--color-blanco);
   font-family: var(--font-Monserrat);
-  margin-top: 16px;
+  margin-top: 10px;
 }
 
 .contenedor {
@@ -54,7 +54,7 @@ main {
   width: 140px;
   rotate: 10deg;
   z-index: -100;
-  right: 0.8em;
+  right: 1em;
 }
 
 
@@ -111,7 +111,7 @@ main {
 
 @media (min-width:1024px) { 
   .contenedor {
-    height: 75vh;
+    height: 90vh;
     padding-left: 6%;
     padding-right: 6%;
     font-size: 1.2em;
