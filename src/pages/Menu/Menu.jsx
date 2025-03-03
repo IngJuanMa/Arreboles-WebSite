@@ -259,6 +259,41 @@ const ProductosUno = [
     ingredientes: "Unidad chorizo las brisas",
     imagen: "/products/chorizo.png",
     categoria: "Adicionales"
+  },
+
+  //Bebidas
+
+  {
+    id: 21,
+    nombre: "Agua en Botella",
+    precio: "2000",
+    ingredientes: "Botella PET en presentación 600ml",
+    imagen: "/products/pool-agua.webp",
+    categoria: "Bebidas"
+  },
+  {
+    id: 22,
+    nombre: "Coca Cola Personal",
+    precio: "4000",
+    ingredientes: "Botella tamaño PET tamaño personal 400ml",
+    imagen: "/products/Coca.png",
+    categoria: "Bebidas"
+  },
+  {
+    id: 23,
+    nombre: "Jugo Hit Personal",
+    precio: "4000",
+    ingredientes: "Botella tamaño PET tamaño personal 500ml",
+    imagen: "/products/HitPer.png",
+    categoria: "Bebidas"
+  },
+  {
+    id: 24,
+    nombre: "Jugo Hit Litro",
+    precio: "5000",
+    ingredientes: "Caja tamaño familiar de 1000mL",
+    imagen: "/products/HitCaja.png",
+    categoria: "Bebidas"
   }
 
 ]
@@ -307,9 +342,9 @@ function productos() {
               <motion.article
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.3 }}
                 className="carddestacado"
-                 key={item.id}>
+                key={item.id}>  
                 <img src={item.imagen} className='fotoproducto' />
                 <div className="info-card">
                   <h4>{item.nombre}</h4>
